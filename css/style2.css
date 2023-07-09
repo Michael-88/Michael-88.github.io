@@ -1,0 +1,195 @@
+/*menu*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+    background-color: #414a4c;
+    overflow-x: hidden;
+}
+
+header {
+    height: 118px;
+    display: flex;
+    background-color: #3b444b;
+    opacity: 90%;
+    align-items: center;
+}
+
+.navbar {
+    flex: 3;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+} 
+
+.logo-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+
+}
+
+h4 {
+    margin-left: 40px;
+}
+
+h4, a {
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+a:hover {
+    color:red;
+}
+
+/* Gestione responsivness navbar*/
+
+.fa-bars {
+    margin-right: 40px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 970px){
+    body {overflow-x: hidden;
+    }
+    .navbar {
+        position: absolute;
+        right: 0;
+        height:92vh;
+        top:8vh;
+        width: 35%;
+        transform: translateX(100%);
+        transition: 0.8s ease-in;
+        background-color: #3b444b;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: aliceblue;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a:hover {
+        color: white;
+        padding: 8px 8px 8px 32px;
+    }
+
+    .navbar {
+        opacity: 100%;
+        color: aliceblue;
+    }
+    
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+/*fine responsivness navbar*/
+
+.intro {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.intro-text {
+    color:white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.foto-1, .foto-2 {
+    display: flex;
+}
+
+.menu-1 {
+    height: 1000px;
+    width: auto;
+    position: relative;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.menu-2 {
+    height: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Resposiveness menu */
+
+/* Fine Resposiveness menu */
+
+.main-container {
+    display: flexbox;
+    height: 500px;
+}
+
+.booking-container {
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    border: solid;
+    height: 400px;
+    width: 400px;
+}
+
+.booking-text {
+    display: flex;
+    color:white;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 10%;
+}
+
+.foto-container {
+    display: inline-flex;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    border: solid;
+    height: 400px;
+    width: 400px;
+}
+
+.booking-container, .foto-container {
+    align-items: center;
+}
+
+.foto-esterno {
+    height: 100px;
+    width: 100px;
+}
