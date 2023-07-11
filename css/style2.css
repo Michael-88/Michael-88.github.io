@@ -153,43 +153,186 @@ a:hover {
 /* Fine Resposiveness menu */
 
 .main-container {
-    display: flexbox;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red;
+    height: 800px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    border: solid green;
 }
 
 .booking-container {
     display: flex;
-    margin-top: 100px;
-    text-align: center;
-    justify-content: center;
-    border: solid;
-    height: 400px;
+    border: solid blue;
+    height: 800px;
     width: 400px;
-}
-
-.booking-text {
-    display: flex;
-    color:white;
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 10%;
+    color: white;
 }
 
 .foto-container {
-    display: inline-flex;
-    margin-top: 100px;
-    text-align: center;
-    justify-content: center;
-    border: solid;
-    height: 400px;
-    width: 400px;
+    display: flex;
+    border: solid violet;
+    height: 390px;
+    width: 600px;
+    top: auto;
 }
 
-.booking-container, .foto-container {
+.foto-container-2 {
+    display: flex;
+    border: solid violet;
+    height: 390px;
+    width: 600px;
+    top: auto;
+}
+
+.booking-text {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#nome {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#indirizzo, #telefono {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#cta {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.foto-container {
+    display: flex;
+    background-image: url("../images/esterno.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.foto-container-2 {
+    display: flex;
+    background-image: url("../images/interno2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container {
+    border: solid yellowgreen;
+    height: 500px;
+}
+
+label {
+    color: aliceblue;
+}
+
+input[type=text], textarea {
+    width: 40%;
     align-items: center;
 }
 
-.foto-esterno {
-    height: 100px;
-    width: 100px;
+input[type=submit] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+  }
+
+.team {
+    display: flex;
+    border: solid red;
+    height: 500px;
+    background-image: url("../images/interno3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: center;
 }
+
+.team-foto {
+    /*height: 500px;
+    width: 100%;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.container-storia {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border: solid greenyellow;
+    color: aliceblue;
+    padding: 50px;
+}
+
+h1 {
+    display: flex;
+    padding-top: 5px;
+    margin: auto;
+    font-size: 40px
+}
+
+.storia {
+    display: flex;
+    margin: auto;
+}
+
+.card-container {
+    display: flex;
+    padding: 30px;
+    color: aliceblue;
+    border: solid red;
+    justify-content: center;
+
+}
+
+.card-1, .card-2, .card-3 {
+    background-color: #4d5152;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    height: 350px;
+}
+
+.card-image-1, .card-image-2, .card-image-3 {
+    background-image: url("../images/portrait.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+}
+
+
+.container-card-1 {
+    display: flex;
+    border: solid seagreen;
+}
+
+.container-card-2 {
+    display: flex;
+    border: solid seagreen;
+}
+ 
+.container-card-3 {
+    display: flex;
+    border: solid seagreen;
+}  
+
+b {
+    text-align: center;
+  }
+

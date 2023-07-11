@@ -18,7 +18,7 @@
         <nav class="navbar">
             <ul class="nav-links">
                 <li class="nav-item"> <a href="./index.html">Home</a></li>
-                <li class="nav-item"> <a href="./team.html">Team</a></li>
+                <li class="nav-item"> <a href="./about.html">About</a></li>
                 <li class="nav-item"> <a href="./menu.html">Menu</a></li>
                 <li class="nav-item"> <a href="#">Prenota</a></li>
             </ul>
@@ -28,14 +28,35 @@
         </div>
     </header>
     <div class="main-container">
-    <div class="booking-container">
-        <p class="booking-text">
-            Per prenotare o per organizzare la vostra festa chiamateci oppure compilate il form qui sotto
-        </p>
+        <div class="booking-container">
+            <p class="booking-text">
+                <span id="nome">Sant'Albino cafè</span> </br>
+                <span id="indirizzo">Goffredo Mameli, 20900 Monza MB</span> </br>
+                <span id="telefono">339 372 6273</span></br>
+                </br>
+                <span id="cta">
+                    Per prenotare o per organizzare la vostra festa 
+                    chiamateci oppure compilate il form qui sotto
+                </span>
+            </p>
+        </div>
+        <div class="container-2">
+            <div class="foto-container">
+            </div>
+            <div class="foto-container-2">
+            </div>
+        </div>
     </div>
-    <div class="foto-container">
-        <img class="foto-esterno" src="./images/esterno.jpg" alt="esterno Sant'Albino Cafè">
-    </div>
+    <div class="form-container">
+    <form class="form">
+        <label for="fname"> Nome </label> <br>
+        <input type="text" id="fname" name="fname"> </form> <br>
+        <label for="faddress"> Mail </label> <br>
+        <input type="text" id="faddress" name="faddress"> </form> <br>
+        <label for="ftext"> Testo </label>
+        <textarea name="ftext" rows="10" cols="30"></textarea> <br>
+        <input type="submit" value="Invia">
+    </form>
     </div>
     <script src="./js/script.js"></script>    
 </body>

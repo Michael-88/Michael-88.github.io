@@ -5,8 +5,8 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Ysabeau Infant', sans-serif;
-    background-image: url(../images/cafe-sfondo.jpg);
-    background-position: center;
+    background-image: url(../images/interno1.jpg);
+    background-position: cover;
     background-repeat: no-repeat;
 }
 
