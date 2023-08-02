@@ -91,6 +91,7 @@ a:hover {
         width: 35%;
         transform: translateX(100%);
         transition: 0.8s ease-in;
+        display: none;
         background-color: #3b444b;
     }
     
@@ -123,6 +124,7 @@ a:hover {
 
 .nav-active {
     transform: translateX(0%);
+    display: block;
 }
 
 .hero-container {
