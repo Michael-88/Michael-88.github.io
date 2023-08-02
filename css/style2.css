@@ -5,7 +5,6 @@ body {
     margin: 0;
     font-family: 'Ysabeau Infant', sans-serif;
     background-color: #414a4c;
-    overflow-x: hidden;
 }
 
 header {
@@ -41,7 +40,6 @@ a {
     height: 100px;
     width: 100px;
     margin-left: 20px;
-
 }
 
 h4 {
@@ -54,7 +52,11 @@ h4, a {
 }
 
 a:hover {
-    color:red;
+    font-weight: bold;
+}
+
+#phone-logo:hover {
+    color: #252828;
 }
 
 /* Gestione responsivness navbar*/
@@ -67,12 +69,11 @@ a:hover {
     display: none;
 }
 
-
 .burger {
     display: none;
 }
 
-@media (max-width: 970px){
+@media (max-width: 835px){
     body {overflow-x: hidden;
     }
     .navbar {
@@ -116,7 +117,10 @@ a:hover {
 .nav-active {
     transform: translateX(0%);
 }
+
 /*fine responsivness navbar*/
+
+/* Menu */
 
 .intro {
     margin-top: 50px;
@@ -146,11 +150,16 @@ a:hover {
     position: relative;
     margin: auto;
     padding-top: 10px;
+    margin-bottom: 100px;
 }
+
+/* Menu end */
 
 /* Resposiveness menu */
 
 /* Fine Resposiveness menu */
+
+/* Booking gallery */
 
 .main-container {
     display: flex;
@@ -158,6 +167,7 @@ a:hover {
     align-items: center;
     border: solid red;
     height: 800px;
+    margin-top: 50px;
 }
 
 .container-2 {
@@ -175,19 +185,25 @@ a:hover {
 }
 
 .foto-container {
-    display: flex;
     border: solid violet;
     height: 390px;
     width: 600px;
     top: auto;
+    background-image: url("../images/esterno.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .foto-container-2 {
-    display: flex;
     border: solid violet;
     height: 390px;
     width: 600px;
     top: auto;
+    background-image: url("../images/interno2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .booking-text {
@@ -209,47 +225,51 @@ a:hover {
 #cta {
     font-size: 25px;
     font-weight: 200;
+    margin-bottom: 200px;
 }
 
-.foto-container {
-    display: flex;
-    background-image: url("../images/esterno.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-bottom: 10px;
-}
 
-.foto-container-2 {
-    display: flex;
-    background-image: url("../images/interno2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/* end Booking gallery */
+
+/* form */
 
 .form-container {
     border: solid yellowgreen;
-    height: 500px;
+    margin: auto;
+    padding-top: 40px;
+    height: 600px;
+    font-size: 20px;
 }
 
-label {
+form {
+    text-align: center;
     color: aliceblue;
 }
 
-input[type=text], textarea {
+input[type=text] {
     width: 40%;
     align-items: center;
+    border-radius: 10px;
+    height: 30px;
+}
+
+textarea {
+    width: 50%;
+    align-items: center;
+    border-radius: 10px;
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #252828;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
-  }
+    border-radius: 20px;
+}
+
+/* Form end */
 
 .team {
     display: flex;
@@ -272,7 +292,7 @@ input[type=submit] {
 .container-storia {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: auto;
     border: solid greenyellow;
     color: aliceblue;
     padding: 50px;
@@ -299,6 +319,7 @@ h1 {
 
 }
 
+/*
 .card-1, .card-2, .card-3 {
     background-color: #4d5152;
     padding: 10px;
@@ -315,7 +336,6 @@ h1 {
     height: 250px; 
     border-radius: 50%;
 }
-
 
 .container-card-1 {
     display: flex;
@@ -336,3 +356,143 @@ b {
     text-align: center;
   }
 
+*/  
+
+/* Ante e Post */
+  
+.ante-post-container {
+    border: solid red;
+    display: flex;
+    height: 400px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.ante-container, .post-container {
+    border: solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+}
+
+.ante {
+    border: solid blueviolet;
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+}
+
+.post {
+    border: solid blueviolet;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.foto-ante {
+    border: solid burlywood;
+    height: 300px;
+    background-image: url(../images/esterno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-post {
+    border: solid burlywood;
+    height: 300px;
+    background-image: url(../images/esterno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Ante e Post end */
+
+/*footer*/
+
+footer {
+    height: 160px;
+    background-color: #2F3233;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    margin: auto;
+    height: 10px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.footer-image {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-text {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* footer end */
+
+/* responsiveness About */
+
+@media (max-width: 835px){
+    .ante-post-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ante-container {
+        margin-bottom: 50px;
+    }
+}   
+
+/* responsiveness Menu */
+
+@media (max-width: 835px){
+    .menu-1, .menu-2 {
+        width: 100%;
+        height: auto;
+        margin-right: 30px;
+    }
+    .intro-text {
+        font-size: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}   
+
+/* responsiveness Booking */
+
+@media (max-width: 1030px){
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .booking-container {
+        height: auto;
+        margin-bottom: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .booking-text {
+        width: 100%;
+    }
+
+    .container-2 {
+        width: 100%;
+    }
+
+    .foto-container, .foto-container-2 {
+        width: 100%;
+    }
+}   
